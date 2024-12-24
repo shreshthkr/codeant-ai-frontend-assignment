@@ -1,0 +1,88 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .titleSection h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.25rem;
+  }
+  
+  .repoCount {
+    color: #6b7280;
+    font-size: 0.875rem;
+  }
+  
+  .searchBar {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 2rem;
+  }
+  
+  .searchBar input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 0.875rem;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .refreshButton, .addButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .refreshButton {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  
+  .addButton {
+    background-color: #2563eb;
+    border: none;
+    color: white;
+  }
+  
+  .refreshButton:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .addButton:hover {
+    background-color: #1d4ed8;
+  }
+  
+  @media (max-width: 1024px) {
+    .searchBar {
+      max-width: 300px;
+      margin: 0 1rem;
+    }
+  }

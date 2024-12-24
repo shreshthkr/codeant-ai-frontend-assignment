@@ -1,0 +1,17 @@
+.MainContainer{
+  width: 100%;
+  height:auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;  
+}
+.sidebar{
+    width: 18%;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.dashboard{
+    width: 81%;
+    height: 100vh;
+    border: 1px solid black;
+}

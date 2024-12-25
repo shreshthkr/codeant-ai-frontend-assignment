@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.staticContainer {
+  width: 50%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.loginContainer {
+  width: 50%;
+  height: 100%;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staticBox {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.staticBox > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoBox {
+  width: 100%;
+  height: 50%;
+}
+.logoBox > img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.firstBox {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.topBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 5px;
+}
+.topBox > img {
+  width: 30px;
+  height: 90%;
+  object-fit: contain;
+}
+.topBox > p {
+  font-weight: 600;
+}
+.listBox {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list p {
+  text-align: center;
+}
+.list > p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.list > p:last-child {
+  font-size: 13px;
+  font-weight: 400;
+  color: #727272;
+}
+.secondBox {
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 33%;
+  left: 24%;
+}
+.chartBox {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.chartBox > img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+.arrowBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.arrowBox > p:first-child {
+  color: rgb(0, 132, 255);
+  font-weight: 700;
+  font-size: 15px;
+}
+.arrowBox > p:last-child {
+  font-size: 13px;
+  font-weight: 500;
+}
+.issuesBox {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+}
+.issuesBox > p:first-child {
+  font-size: 13px;
+  font-weight: 600;
+}
+.issuesBox > p:last-child {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+/* loginContainer */
+
+.loginBox {
+  width: 90%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.loginBox1 {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.box2 {
+  width: 100%;
+}
+.box1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 img {
+  object-fit: contain;
+}
+.box2 > h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+}
+.box3 {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+.box3 div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box3 div p {
+  font-weight: 600;
+}
+.loginBox2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.loginList {
+  width: 80%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.loginList:hover {
+  background-color: #ececec;
+}
+.loginList > img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.loginList p {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .staticContainer {
+    display: none;
+  }
+  .loginContainer {
+    width: 100%;
+  }
+  .loginBox {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .box2 h1 {
+    font-size: 20px;
+  }
+  .loginList {
+    width: 95%;
+  }
+  .loginList > img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  .loginList p {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}

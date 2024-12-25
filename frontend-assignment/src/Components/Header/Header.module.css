@@ -1,88 +1,139 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.2rem 2rem 1rem;
+}
+
+.searchSection {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.titleSection h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.repoCount {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.searchBar {
+  position: relative;
+  width: 50%;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 0.875rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.refreshButton,
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.refreshButton {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.addButton {
+  background-color: #2563eb;
+  border: none;
+  color: white;
+}
+
+.refreshButton:hover {
+  background-color: #f3f4f6;
+}
+
+.addButton:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 1024px) {
+  .topSection,
+  .searchSection {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .topSection {
+    padding: 2px 18px 0;
+  }
+  .titleSection {
+    margin-bottom: 10px;
+  }
   .titleSection h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #111827;
-    margin-bottom: 0.25rem;
+    font-size: 20px;
   }
-  
-  .repoCount {
-    color: #6b7280;
-    font-size: 0.875rem;
-  }
-  
-  .searchBar {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 2rem;
-  }
-  
-  .searchBar input {
-    width: 100%;
-    padding: 0.75rem 1rem 0.75rem 2.5rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.5rem;
-    outline: none;
-    font-size: 0.875rem;
-  }
-  
-  .searchIcon {
-    position: absolute;
-    left: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #9ca3af;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .refreshButton, .addButton {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.625rem 1rem;
-    border-radius: 0.5rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  
+
   .refreshButton {
-    background-color: #f9fafb;
-    border: 1px solid #e5e7eb;
-    color: #374151;
+    padding: 2;
   }
-  
+  .refreshButton svg {
+    width: 13px;
+    height: 13px;
+  }
+  .refreshButton span {
+    font-size: 11px;
+  }
   .addButton {
-    background-color: #2563eb;
-    border: none;
-    color: white;
+    padding: 2;
   }
-  
-  .refreshButton:hover {
-    background-color: #f3f4f6;
+  .addButton svg {
+    width: 13px;
+    height: 13px;
   }
-  
-  .addButton:hover {
-    background-color: #1d4ed8;
+  .addButton span {
+    font-size: 11px;
   }
-  
-  @media (max-width: 1024px) {
-    .searchBar {
-      max-width: 300px;
-      margin: 0 1rem;
-    }
+  .searchSection {
+    width: 90%;
+    padding: 0 15px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
+  .searchBar {
+    width: 80%;
+  }
+}

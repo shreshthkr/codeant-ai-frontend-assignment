@@ -70,8 +70,45 @@
 .menuList > div:hover {
   background-color: blue;
   color: #fff;
+  cursor: pointer;
+}
+.menuList > div:first-child {
+  background-color: blue;
+  color: #fff;
 }
 .sideBottom {
   width: 100%;
   height: auto;
+}
+.menuListBottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.menuListBottom > div {
+  list-style: none;
+  width: 93%;
+  height: 35px;
+  margin: auto;
+  font-size: 16px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.menuListBottom > div:hover {
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+}
+a {
+  color: #000;
+  text-decoration: none;
 }

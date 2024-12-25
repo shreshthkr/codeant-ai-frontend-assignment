@@ -1,9 +1,9 @@
-import Dashboard from './Pages/Dashboard/Dashboard';
+import AllRoutes from "./Routes/Routes";
 
 function App() {
   return (
     <>
-      <Dashboard />
+      <AllRoutes />
     </>
   );
 }

@@ -42,14 +42,14 @@ const Sidebar = () => {
           </nav>
         </div>
         <div className={styles.sideBottom}>
-          <div className={styles.menuList}>
+          <div className={styles.menuListBottom}>
             <div>
               <Phone size={18} />
               <span>Support</span>
             </div>
             <div>
               <LogOut size={18} />
-              <span>Logout</span>
+              <a href="/login">Logout</a>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
-Instructions for Running the Project Locally
-Prerequisites
+# Deployed url:
+ https://friendly-sunshine-3be66a.netlify.app/
+# Instructions for Running the Project Locally
+# Prerequisites
 Ensure the following software is installed:
 
 Node.js (v14 or later) – Download Node.js npm (Node Package Manager) – Comes with Node.js. Steps to Set Up and Run Locally Clone the Repository Clone the project to your local machine using Git:
